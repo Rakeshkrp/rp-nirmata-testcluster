@@ -8,7 +8,7 @@ on:
 
 env:
   EKS_CLUSTER: rp-nirmata-testcluster
-  EKS_REGION: us-east-1
+  EKS_REGION: us-east-3
 
 jobs:
   Job1:
