@@ -18,7 +18,7 @@ terraform {
 }
 
 variable "region" {
-  default     = "us-east-1"
+  default     = "us-east-3"
   description = "AWS region"
 }
 
@@ -80,7 +80,7 @@ module "vpc" {
 
   name                 = "${var.cluster_name}-vpc"
   cidr                 = "10.0.0.0/16"
-  azs                  = ["us-east-1a", "us-east-1b"]
+  azs                  = ["us-east-3a", "us-east-3b"]
   private_subnets      = ["10.0.1.0/24", "10.0.2.0/24"]
   public_subnets       = ["10.0.4.0/24"]
   enable_nat_gateway   = true
